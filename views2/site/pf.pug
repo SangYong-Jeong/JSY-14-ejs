@@ -1,0 +1,11 @@
+extends ../layout/sample-layout
+
+
+
+block content 
+	section.pf-wrapper.content-wrapper
+		include ../inc/title-bar
+		.pf-wrap
+			each list in lists
+				include ../components/list
+				// pug는 ejs와 다르게 for문 안에 include 하는 것에 변수를 넣어주지 않아도 알아서 잘 굴러간다.
