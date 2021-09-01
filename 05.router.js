@@ -14,7 +14,8 @@
  */
 
 /************* global init ***************/
-const port = 3000
+require('dotenv').config() // root에 .env 파일의 변수를 전역(process.env)으로 등록
+const port = process.env.PORT // 
 const express = require('express')
 const app = express()
 
