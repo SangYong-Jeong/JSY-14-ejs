@@ -7,7 +7,7 @@ router.get('/login', (req,res,next) => {
 })
 
 router.get('/logout', (req,res,next) => {
-	res.send('로그아웃')
+	res.render('test')
 })
 
 router.get('/join', (req,res,next) => {
